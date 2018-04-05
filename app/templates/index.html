@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+  {% if posts %}
+    {% for post in posts %}
+      <p>{{ post.username }} says : <b>{{ post.body }}</b></p>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
